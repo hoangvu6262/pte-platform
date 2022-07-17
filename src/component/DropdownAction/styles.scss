@@ -1,0 +1,41 @@
+@use '../../asset/style/' as *;
+
+.dropdown-action {
+    margin-top: 10px;
+    .dropdown-action__btn {
+        font-size: 14px;
+        background-color: rgb(245, 246, 247);
+        color: rgb(153, 153, 153);
+        padding: 6px 18px;
+        border-radius: 4px;
+        margin-right: 24px;
+        cursor: pointer;
+        border: none ;
+
+        .dropdown-action__icon {
+            font-size: 12px;
+        }
+    }
+
+    .dropdown-action__btn-new{
+        font-size: 14px;
+        background-color: rgb(245, 246, 247);
+        color: #29d2bf;
+        padding: 6px 18px;
+        border-radius: 4px;
+        margin-right: 24px;
+        cursor: pointer;
+        border: none ;
+
+        .dropdown-action__new-icon{
+            transform: rotate(90deg);
+            font-size: 17px;
+        }
+    }
+}
+
+.ant-dropdown-menu {
+    border-radius: 5px;
+    background-color: #f5f6f7;
+    
+}

@@ -1,0 +1,128 @@
+@use "../../../../asset/style/" as *;
+
+.read-alouds{
+    width: 100%;
+    margin-top: 30px;
+
+    &__countDown{
+        color:#ff6666; 
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    &__paragraph{
+        border-radius: 5px;
+        
+        border: 1px dashed rgb(153, 153, 153);
+        padding: 20px;
+        line-height:1.8rem;
+        position: relative;
+        overflow-wrap: break-word;
+        word-break: normal;
+        background-color: transparent;
+        font-size: 1.15rem;
+
+        .paragraph__content{
+            padding: 8px 0px;
+            font-size: 18.4px;
+            color: $text-color;
+            font-family: $f-family;
+            line-height: 36.8px;
+            &:hover{
+                cursor: pointer;
+                background-color: $primary-color-2;
+            }
+        }
+    }
+    
+    &__progress{
+        margin-top: 24px;
+        background-color: #52c41a;
+        border-radius: 8px;
+        height: 2.5px;
+        width: 100%;
+    }
+
+    &__body{
+        border-radius: 5px;
+        padding: 16px 0;
+        align-items: center;
+        background-color: rgb(241, 243, 244);
+        margin-bottom: 20px;
+
+        &-text{
+            text-align: center;
+            font-size: 16px;
+        }
+
+        &-button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+            .read-alouds__microphoneButton-start{
+                margin-top: 8px;
+                height: 50px;
+                width: 50px;
+                background-color: rgb(218, 220, 228);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                cursor: pointer;
+    
+                i{
+                    font-size: 30px;
+                }
+            }
+            .read-alouds__microphoneButton-stop{
+                margin-top: 8px;
+                height: 50px;
+                width: 50px;
+                background-color: $primary-color;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                cursor: pointer;
+    
+                i{
+                    color: #fff;
+                    font-size: 30px;
+                }
+            }
+
+            .tips{
+                color: #999;
+                cursor: pointer;
+                position: absolute;
+                bottom: 0;
+                right: 10px;
+                &:hover{
+                    color: #29d2bf;
+                    cursor: pointer;
+                    transition: all 0.3s;
+                }
+
+                &__icon{
+                    margin-right: 4px;
+                }
+
+                span{
+                    text-decoration: underline;
+                    font-size: 14px;
+                }
+            }
+            
+            
+
+        }
+
+    }
+
+    p{
+        margin-top: 8px;
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,8 @@
+@use "../../asset/style/" as *;
+
+.main-layout {
+    &__content {
+        font-size: $fs-15;
+        font-family: $f-family;
+    }
+}

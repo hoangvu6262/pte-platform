@@ -1,0 +1,46 @@
+@use '../../../../asset/style/' as *;
+
+.reading {
+  &-paragraph {
+    border: none !important;
+    padding: 0 !important;
+    margin-bottom: 0;
+  }
+  &-form {
+    width: 100%;
+    position: relative;
+    &.disabled {
+      textarea {
+        border: none;
+      }
+    }
+    &-redo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+.ant-checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 0;
+  &-item {
+    font-size: 16px;
+    font-family: $f-family;
+  }
+}
+
+.ant-checkbox-checked .ant-checkbox-inner{
+  background-color: $primary-color;
+  border-color: $primary-color;
+}
+
+.ant-checkbox-checked {
+  &::after {
+    border-color: $primary-color; 
+  }
+}

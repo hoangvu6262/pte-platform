@@ -1,0 +1,17 @@
+@use '../../asset/style/' as *;
+
+.cus-para {
+  border-radius: 5px;   
+  border: 1px dashed rgb(153, 153, 153);
+  padding: 20px;
+  line-height:1.8rem;
+  position: relative;
+  overflow-wrap: break-word;
+  word-break: normal;
+  background-color: transparent;
+  font-size: 1.15rem;
+
+  p {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,51 @@
+@use "../../asset/style/" as *;
+
+.discuss {
+    margin-bottom: 70px;
+    .discussion-tab {
+        padding: 20px 10px;
+        &__view-all {
+            color: $primary-color;
+            font-size: $fs-16;
+            cursor: pointer;
+            font-weight: 500;
+            span {
+                margin-left: 10px;
+            }
+
+            &::after{
+                content: ">";
+                font-size: 20px;
+                color: $primary-color;
+                margin-left: 10px;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .discussion__comment{
+
+        &-add{
+            padding: 20px 0;
+            text-align: right;
+            button {
+                background-color: $primary-color;
+                border: none;
+            }
+        }
+    }
+
+    .ant-tabs-tab-btn{
+        padding: 0px 10px;
+        font-family: $f-family;
+        font-size: 15px;
+
+        &:hover{
+            color: $primary-color
+        }
+    }
+    .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn{
+        color: $primary-color;
+        font-weight: 500;
+    }
+}

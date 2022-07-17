@@ -1,0 +1,33 @@
+@use '../../../asset/style/' as *;
+
+.sidebar {
+  padding-top: 20px;
+  &-close {
+    font-size: 20px;
+    color: $color-red;
+    position: absolute;
+    top: 12px;
+    right: 32px;
+    cursor: pointer;
+    z-index: 10;
+  }
+}
+
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  background-color: $primary-color-2 !important;
+  a {
+    color: $primary-color;
+    font-weight: 500;
+  }
+  &::after {
+    border-right: 3px solid $primary-color !important;
+  }
+}
+
+.ant-menu-title-content {
+  a {
+    &:hover {
+      color: $primary-color !important;
+    }
+  }
+}

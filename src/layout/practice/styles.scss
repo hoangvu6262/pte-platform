@@ -1,0 +1,28 @@
+@use "../../asset/style/" as *;
+
+.practice-layout {
+    padding-top: 76px;
+    width: 1140px;
+    margin: auto;
+    p{
+        margin-top: 8px;
+        font-size: 16px;
+    }
+}
+
+@media  (max-width: 900px) {
+    .practice-layout{
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media  (max-width: 1200px) {
+    .practice-layout{
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+

@@ -1,0 +1,17 @@
+.action-comment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+
+    .action-comment__button{
+        
+        &-report {
+            color: rgb(153, 153, 153);
+            margin-left: 20px;
+            border: none; 
+        }
+
+    }
+}

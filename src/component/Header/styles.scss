@@ -1,0 +1,125 @@
+@use '../../asset/style/' as *;
+
+header {
+  width: 100%;
+  height: 76px;
+
+  transition: all .2s linear;
+  position: fixed;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  background: #fff;
+  &.shrink {
+    z-index: 100;
+  }
+}
+
+.header {
+  width: 1140px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  a {
+    color: $primary-color !important;
+  }
+  &__menu {
+    flex: 1;
+    background-color: transparent !important;
+    &--submenu {
+      display: flex;
+    }
+  }
+
+  &__sidebar {
+    display: none;
+  }
+
+  &__sidebar--icon {
+    font-size: 20px;
+    transition: all .2s linear;
+    padding: 20px;
+    &:hover {
+      color: $primary-color;
+      cursor: pointer;
+      transform: scale(120%);
+    }
+  }
+
+  .ant-menu {
+    background-color: transparent !important;
+  }
+
+  .ant-menu {
+    &::before {
+      display: none !important;
+    }
+  }
+  .ant-menu-item {
+    &-selected {
+      color: $primary-color !important;
+    }
+
+    &::after {
+      border: none !important;
+    }
+  }
+
+  .ant-menu-horizontal {
+    border: none;
+  }
+
+  .ant-menu-submenu-title, .ant-menu-submenu-horizontal {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 16px;
+    &:hover {
+      color: $primary-color !important;
+    }
+  }
+
+  .ant-menu-horizontal > .ant-menu-submenu::after {
+    border: none !important;
+  }
+}
+
+@media (max-width: 1140px) {
+  .header {
+    width: 100%;
+    padding: 0 20px;
+    &__menu {
+      display: none;
+    }
+    &__sidebar {
+      display: block;
+    }
+  }
+
+}
+
+.appbar-link__menu{
+  border: none;
+  text-align: center;
+  li {
+      // color: #333;
+      .ant-menu-submenu-title{
+          font-size: 14px;
+          font-family: $f-family;
+          color: $text-color !important;
+          &:hover{
+              color: $primary-color !important;
+              border-bottom: none !important;
+          }
+          &:hover::after{
+              content: " ";
+              border-bottom: none !important;
+          }
+      }
+      
+  }
+}
+
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-active {
+  color: $primary-color !important;
+}

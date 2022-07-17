@@ -1,0 +1,16 @@
+@use "../../asset/style/" as *;
+
+.test-exam{
+    background-image: url(https://corptrain.thimpress.com/demo-kit/wp-content/uploads/sites/25/2019/10/header-search-bk.png?id=6825);
+    &__container {
+        padding: 20px 70px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .test-exam{
+        &__container{
+            padding: 15px 30px;
+        }
+    }
+}

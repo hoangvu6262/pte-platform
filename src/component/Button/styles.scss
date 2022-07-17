@@ -1,0 +1,62 @@
+@use '../../asset/style/' as *;
+
+.button {
+    margin-right: 15px;
+    background: $linear-color;
+    color:#ffffff;
+    border: 1px solid transparent;
+    border-radius:24px;
+    display:inline-block;
+    font-size:16px;
+    font-weight:600;
+    letter-spacing:0.3px;
+    line-height:48px;
+    padding:0px 42px;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    height: fit-content;
+    transition: all .4s linear;
+    &:hover {
+        background: #ffffff;
+        color: $primary-color;
+        border: 1px solid $primary-color;
+        cursor: pointer;
+    }
+
+    &.outline {
+        background: #ffffff;
+
+        color: $primary-color;
+        border: 1px solid $primary-color;
+        &:hover {
+            background: $linear-color;
+            color:#ffffff;
+            border: 1px solid transparent;
+            cursor: pointer;
+        }
+    }
+}
+
+.small {
+    font-size: 15px;
+    font-weight:400;
+    letter-spacing:0.3px;
+    line-height:32px;
+    padding:0px 22px;
+}
+
+.disabled {
+    color: $text-color-1;
+    background-color: #fff !important;
+    background-image: none;
+    border-color: $text-color-1;
+    &:hover{
+        color: $text-color-1;
+        background-color: #fff !important;
+        background-image: none;
+        border-color: $text-color-1;
+        cursor: not-allowed;
+    }
+
+}

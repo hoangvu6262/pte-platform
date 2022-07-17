@@ -1,0 +1,23 @@
+@use '../../../../asset/style/' as *;
+
+.writing {
+  &-paragraph {
+    border: none !important;
+    padding: 0 !important;
+  }
+  &-form {
+    width: 100%;
+    position: relative;
+    &.disabled {
+      textarea {
+        border: none;
+      }
+    }
+    &-redo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

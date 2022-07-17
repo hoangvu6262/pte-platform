@@ -1,0 +1,42 @@
+.practise-body{
+    width: 100%;
+    margin-top: 30px;
+
+    &__countDown{
+        color:#ff6666; 
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    &__paragraph{
+        border-radius: 5px;
+        border: 1px dashed rgb(153, 153, 153);
+        padding: 20px;
+        line-height:1.8rem;
+        position: relative;
+        overflow-wrap: break-word;
+        word-break: normal;
+        background-color: transparent;
+        font-size: 1.15rem;
+
+        .paragraph__content{
+            padding: 8px 0px;
+            font-size: 18.4px;
+            color: $text-color;
+            font-family: $f-family;
+            line-height: 36.8px;
+            &:hover{
+                cursor: pointer;
+                background-color: $primary-color-2;
+            }
+        }
+    } 
+
+    &__body {
+        margin-top: 32px;
+    }
+
+    p{
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,11 @@
+@use '../../asset/style/' as *;
+
+.countdown {
+  margin-bottom: 12px;
+  span {
+    color: $color-red;
+    font-family: $f-family-0;
+    font-size: 16px;
+    line-height: 1;
+  }
+}

@@ -1,0 +1,22 @@
+@use '../../asset/style/' as *;
+
+.word {
+  display: inline-block;
+  width: fit-content;
+  padding: 0;
+  margin: 2px 0;
+  
+  &:hover {
+    cursor: pointer;
+    background-color: $primary-color-2;
+
+  }
+
+  &.disable {
+
+    &:hover {
+      background-color: transparent;
+      cursor: context-menu;
+    }
+  }
+}

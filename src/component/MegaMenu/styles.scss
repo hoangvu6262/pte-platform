@@ -1,0 +1,48 @@
+@use "../../asset/style" as *;
+
+.mega-menu {
+    width: 98.5vw;
+    .ant-row{
+        width: 100%;
+    }
+    &__container{
+        padding: 20px 30px;
+        margin-top: 10px;  
+        display: flex;
+        flex-direction: column;
+        width: 1140px;
+        margin: auto;
+        
+        .mega-menu__item-title{
+            .ant-menu-item-group-title{
+                padding-left: 8px 3px 8px 17px;
+                font-size: $fs-16;
+                text-transform: uppercase;
+                color: $text-color;
+                font-family: $f-family-0;
+                p{
+                    border-bottom: 2px solid $primary-color-1;
+                    width: 60px;
+                }
+            }
+            .ant-menu-item{
+                font-size: $fs-15;
+                color: $text-color-1;
+                font-family: $f-family;
+                padding-left: 20px !important;
+                &:hover{
+                    color: $primary-color;
+                }
+            }
+            
+            
+        }
+    }
+
+    &__link--item {
+        &:hover {
+            color: $primary-color !important;
+        }
+    }
+    
+}

@@ -1,0 +1,61 @@
+@use '../../../../asset/style/' as *;
+
+.reading {
+  &-paragraph {
+    border: none !important;
+    padding: 0 !important;
+    margin-bottom: 0;
+  }
+  &-form {
+    width: 100%;
+    position: relative;
+    &.disabled {
+      textarea {
+        border: none;
+      }
+    }
+    &-redo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+.ant-radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 0;
+  &-item {
+    font-size: 16px;
+    font-family: $f-family;
+  }
+}
+
+.ant-radio-wrapper:hover .ant-radio {
+  border-color: $primary-color;
+}
+
+.ant-radio:hover .ant-radio-inner{
+  border-color: $primary-color;
+}
+
+.ant-radio .ant-radio-inner{
+  border-color: $primary-color;
+}
+
+.ant-radio-checked::after {
+  border: 1px solid $primary-color;
+}
+.ant-radio-inner::after {
+  background-color: $primary-color;
+
+}
+.ant-radio-wrapper {
+  span {
+    font-size: 16px;
+    font-family: $f-family;
+  }
+}

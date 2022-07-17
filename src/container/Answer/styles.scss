@@ -1,0 +1,16 @@
+@use "../../asset/style/" as *;
+
+.answer {
+    margin-bottom: 30px;
+    
+    .answer__content {
+        padding: 10px 30px;
+        color: $text-color;
+        font-size: $fs-15;
+        font-family: $f-family;
+
+        p {
+            line-height: 1.4;
+        }
+    }
+}

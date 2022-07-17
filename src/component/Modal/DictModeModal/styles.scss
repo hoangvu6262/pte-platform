@@ -1,0 +1,41 @@
+@use '../../../asset/style/' as *;
+
+.dict-mode-modal {
+  width: 954px;
+  padding: 0px 24px 24px;
+
+  &__head {
+    padding-bottom: 12px;
+    border-bottom: 1px solid $primary-color;
+    h1 {
+      font-size: 24px;
+      font-family: $f-family-0;
+      color: $primary-color;
+      font-weight: 700;
+    }
+  }
+
+  &__main {
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+
+  &__section {
+    h3 {
+      font-size: 16px;
+      color: $color-gray-2;
+      font-family: $f-family-0;
+    }
+    
+  }
+
+  &__close {
+    text-align: right;
+  }
+}
+
+@media (max-width: 960px) {
+  .dict-mode-modal {
+    width: 90%;
+  }
+}

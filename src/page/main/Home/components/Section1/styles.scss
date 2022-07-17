@@ -1,0 +1,49 @@
+@use '../../../../../asset/style/' as *;
+
+.home__section-1 {
+    &--container {
+        display: flex;
+    }
+    &--col {
+        img {
+            width: 100%;
+            max-width: 500px;
+        }
+
+        h1 {
+            color: $color-text;
+            font-size: 28px;
+            line-height: 28px;
+            font-weight: normal;
+            font-family: $f-family-0;
+        }
+        .divider {
+            background-color: #12d3bf;
+            color: $color-text;
+            line-height: 24px;
+            margin: 16px 0px;
+            width: 68px;
+            height: 1.6px;
+        }
+        ul {
+            list-style: none;
+            color: #999999;
+            display: list-item;
+            line-height: 24px;
+            text-align:left;
+            margin-left: 0;
+            padding-left: 0;
+            margin-bottom: 48px;
+            li {
+                font-size: $fs-16;
+                line-height: 32px;
+                &:before {
+                    display: inline-block;
+                    content: "-";
+                    width: 1em;
+                    margin-right: 12px;
+                }
+            }
+        }
+    }
+}
